@@ -91,6 +91,3 @@ console.log(anna.customerMoney);
 console.log(anna.changeAmount);
 
 
-/*
-return this.totalPrice = (order.bread * this.productDatabase.bread) + (order.milk * this.productDatabase.milk) + (order.apples * this.productDatabase.apples) + (order.cheese * this.productDatabase.cheese);
-*/
