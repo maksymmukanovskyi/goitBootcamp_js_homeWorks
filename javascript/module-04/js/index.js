@@ -24,8 +24,18 @@ function Cashier(name = 'name of cashier', productDatabase = 'object') {
         console.log(`So Sorry no sufficient amount entered`);
     };
     this.countTotalPrice = function (order) {
-        return this.totalPrice = (order.bread * this.productDatabase.bread) + (order.milk * this.productDatabase.milk) + (order.apples * this.productDatabase.apples) + (order.cheese * this.productDatabase.cheese);
-    };
+        let arr = [];
+        for (let item in order) {
+            if (order.hasOwnProperty(item)) {
+                let sum = order[item] * this.productDatabase[item];
+                arr.push(sum);
+            }
+        }
+
+           let total =  arr.reduce((acc, item) => acc + item);
+            return this.totalPrice = total;
+        };
+
 
     this.getCustomerMoney = function (value) {
         return this.customerMoney = value;
@@ -80,3 +90,7 @@ console.log(anna.totalPrice);
 console.log(anna.customerMoney);
 console.log(anna.changeAmount);
 
+
+/*
+return this.totalPrice = (order.bread * this.productDatabase.bread) + (order.milk * this.productDatabase.milk) + (order.apples * this.productDatabase.apples) + (order.cheese * this.productDatabase.cheese);
+*/
