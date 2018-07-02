@@ -24,16 +24,12 @@ function Cashier(name = 'name of cashier', productDatabase = 'object') {
         console.log(`So Sorry no sufficient amount entered`);
     };
     this.countTotalPrice = function (order) {
-        let arr = [];
-        for (let item in order) {
-            if (order.hasOwnProperty(item)) {
-                let sum = order[item] * this.productDatabase[item];
-                arr.push(sum);
+        for (let key in order) {
+            if (order.hasOwnProperty(key)) {
+                this.totalPrice += order[key] * this.productDatabase[key];
             }
         }
 
-           let total =  arr.reduce((acc, item) => acc + item);
-            return this.totalPrice = total;
         };
 
 
