@@ -73,11 +73,7 @@ function createPostCard({img, title, text, link}) {
     alink.setAttribute('href', link);
     alink.textContent = link;
 
-    note.append(image);
-    note.append(h2);
-    note.append(textCont);
-    note.append(alink);
-
+    note.append(image, h2, textCont, alink);
 
     return note;
 }
@@ -112,17 +108,3 @@ function createPostCard({img, title, text, link}) {
 
 
 
-
-/*function createCards(arr) {
-    let frag = document.createDocumentFragment();
-
-    for (let el of  arr) {
-        frag.innerHTML = (createPostCard(el));
-
-    }
-    console.log(frag);
-    // return frag;
-}
-
-createCards(posts);*/
-// ------------------------------------------------------------------------------------
