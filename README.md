@@ -14,3 +14,5 @@ https://github.com/maksymmukanovskyi/goitBootcamp_js_homeWorks/blob/master/javas
 https://github.com/maksymmukanovskyi/goitBootcamp_js_homeWorks/blob/master/javascript/module-06/js/index.js
 <!--home-work-module-07-01-->
 https://github.com/maksymmukanovskyi/goitBootcamp_js_homeWorks/blob/master/javascript/module-07/js/index.js
+<!--home-work-module-08-01-->
+https://maksymmukanovskyi.github.io/goitBootcamp_js_homeWorks/javascript/module-08/index.html
